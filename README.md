@@ -1,11 +1,28 @@
-# BILLLING -APP
-This is app for the shop owner who wants to keep track of his customer, and view details in the daily and weekly bases.This app helps to create a customer
-and he can view the customer details and and delete to. but the common convenstion that we never delete the user.in this project it  is demo about we can able to delete the customer,also the owner can able to add the project and product price and even he can delete the product ,last but not least the owner can able to create a bill depends on the select of the date ,customer,any number of products ,and he can able to add the products to the cart and even he can able to delete the items from the cart,the finally he can able to create a bill.also before creating a bill he can view the total amount ,this full cart product,download as pdf 
+# QuickBillApp
+
+QuickBillApp is a modern billing and invoice management application designed for shop owners to efficiently track customers, manage products, and generate bills. View daily and weekly reports, manage your inventory, and keep all your billing data organized in one place.
+
+**Recent Updates:**
+- Project initialized and pushed to GitHub.
+- Full project source is now version-controlled.
+- Now uses Supabase for authentication and backend data management.
+
 # Tech Stack
-- javascript |ES6
-- React js,Redux and redux-thunk
-- Git |Markdown
-- [Materail-ui](https://material-ui.com/),[Meterial-ICON](https://material-ui.com/components/material-icons/),[axios](https://www.npmjs.com/package/axios),[lodash](https://www.npmjs.com/package/lodash),[moment](https://www.npmjs.com/package/moment),[React-router-dom](https://www.npmjs.com/package/react-router-dom),[react-select](https://www.npmjs.com/package/react-select),[React-tabs](https://www.npmjs.com/package/react-tabs),[React-to-pdf](https://www.npmjs.com/package/react-to-pdf),[react-typing-effect](https://www.npmjs.com/package/react-typing-effect),[Rechart](https://recharts.org/en-US/api/BarChart),[redux](https://redux.js.org/),[webfontloader](https://www.npmjs.com/package/webfontloader),[uuid](https://www.npmjs.com/package/uuid),[validator](https://www.npmjs.com/package/validator),[sweetalert2](https://www.npmjs.com/package/sweetalert2)
+- JavaScript (ES6)
+- React.js, Redux, Redux-Thunk
+- Supabase (Authentication & Database)
+- Git | Markdown
+- [Material-UI](https://material-ui.com/), [Material-ICON](https://material-ui.com/components/material-icons/), [axios](https://www.npmjs.com/package/axios), [lodash](https://www.npmjs.com/package/lodash), [moment](https://www.npmjs.com/package/moment), [React-router-dom](https://www.npmjs.com/package/react-router-dom), [react-select](https://www.npmjs.com/package/react-select), [React-tabs](https://www.npmjs.com/package/react-tabs), [React-to-pdf](https://www.npmjs.com/package/react-to-pdf), [react-typing-effect](https://www.npmjs.com/package/react-typing-effect), [Rechart](https://recharts.org/en-US/api/BarChart), [redux](https://redux.js.org/), [webfontloader](https://www.npmjs.com/package/webfontloader), [uuid](https://www.npmjs.com/package/uuid), [validator](https://www.npmjs.com/package/validator), [sweetalert2](https://www.npmjs.com/package/sweetalert2)
+
+# Supabase Integration
+This project uses [Supabase](https://supabase.com/) as a backend-as-a-service for authentication and database operations. All user, product, and billing data are securely stored and managed using Supabase. Authentication flows and data fetching are handled via Supabase client integration (see `src/supabaseClient.js`).
+
+**To configure Supabase:**
+1. Create a project on [Supabase](https://supabase.com/).
+2. Copy your Supabase URL and public API key.
+3. Add them to your environment variables or directly in `src/supabaseClient.js`.
+
+# Project Features
 
 # DEMO
 - Here you can see Live DEMO of the website [DEMO](https://determined-mayer-4e72fd.netlify.app/)
@@ -65,5 +82,3 @@ and he can view the customer details and and delete to. but the common convensti
 # Contributors
   ### Ghassen Nefzi
 
-# License
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
