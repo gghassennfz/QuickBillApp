@@ -1,0 +1,47 @@
+import React from 'react'
+import {TableRow,TableCell,Button} from '@material-ui/core'
+
+const CartItem=({id,quantity,product,products,decrementQuantity,incrementQuantity,removeItem})=>{
+
+    const productDetails = products.find(p => p.id === product);
+
+    const handleIncrement=(id)=>{
+       incrementQuantity(id)
+    }
+    const handleDecrement=(id)=>{
+       decrementQuantity(id)
+    }
+    const removeHandle=(id)=>{
+       removeItem(id)
+    }
+
+    if (!productDetails) {
+        return (
+            <TableRow>
+                <TableCell colSpan={4}>Loading product...</TableCell>
+            </TableRow>
+        );
+    }
+
+    return(
+        <>
+           <TableRow>
+                   <TableCell>
+                       {productDetails.name}
+                   </TableCell>
+                   <TableCell>
+                   {productDetails.price * Number(quantity)}
+                   </TableCell>
+                   <TableCell>     
+                           <button disabled={quantity <=1} style={{margin:'3px'}} onClick={()=>handleDecrement(id)} > - </button> 
+                           {quantity} 
+                           <button style={{margin:'2px'}} onClick={()=>handleIncrement(id)} > + </button>
+                   </TableCell>
+                   <TableCell>
+                           <Button onClick={()=>removeHandle(id)}>Remove</Button>
+                   </TableCell>
+           </TableRow>
+       </>
+     )
+}
+export default CartItem
